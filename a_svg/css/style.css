@@ -1,0 +1,457 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	background-color:#dddddd;
+}
+
+.tierra{
+    display: block;
+    position: absolute;
+    background-image: url(../images/bribe.jpg);
+	width: 360px;
+	height: 300px;
+	box-shadow: 2px 2px 2px 300px rgba(0,0,255,0.1);
+}
+
+circle.btn{
+	background-image: url(../images/whatsapp.svg);
+  background-size: 10% 10%;
+	stroke-width:4px;
+	fill:#23345600;
+}
+
+circle.red{
+	stroke:#ff000080;
+	cx:50;
+	cy:60;
+	r:14;
+}
+
+circle.green{
+	stroke:#00ff0080;
+	cx:50;
+	cy:120;
+	r:14;
+}
+
+circle.blue{
+	stroke:#0000ff80;
+	cx:50;
+	cy:180;
+	r:14;
+}
+
+circle.yellow{
+	stroke:#ffff0080;
+	cx:50;
+	cy:240;
+	r:14;
+}
+
+rect.principal{
+	x:85;
+	y:25;
+	rx:25;
+	ry:25;
+	fill:rgb(255,255,255);
+	opacity:0.9;
+	stroke-width:3;
+	stroke:rgb(255,0,0);
+	width:180px;
+	height:250px;
+	display:none;
+}
+
+rect.menu{
+	x:25;
+	y:25;
+	rx:25;
+	ry:25;
+	fill:rgb(255,255,255);
+	opacity:0.9;
+	stroke-width:3;
+	stroke:rgb(180,180,180);
+	width:50px;
+	height:250px;
+}
+
+text{
+	fill:#191970;
+	font-size:9;
+	font-family: Consolas;
+	stroke:#191970;
+	kerning:1;
+	letter-spacing:4;
+	display:none;
+}
+
+text.contenido{
+	fill:#fff;
+	font-size:9;
+	font-family: Consolas;
+	stroke:#00f;
+	kerning:4;
+	letter-spacing:4;
+	display:none;
+}
+
+text.titulo{
+	fill:#fff;
+	font-size:9;
+	font-family: Consolas;
+	stroke:#fff;
+	kerning:4;
+	letter-spacing:4;
+	display:none;
+}
+
+.ball {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.whatsapp {
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	background-image: url(../images/whatsapp.svg);
+	background-size: 100% 100%;
+	offset-path: path('M300 180');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+}
+
+.facebook {
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	background-image: url(../images/facebook.svg);
+	background-size: 100% 100%;
+	offset-path: path('M300 120');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+}
+
+.instagram {
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	background-image: url(../images/instagram.svg.webp);
+	background-size: 100% 100%;
+	offset-path: path('M300 60.5');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+}
+
+.fondoblanco {
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	background-color:rgb(255,255,255);
+	offset-path: path('M300 240');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:50%;
+}
+
+.github {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	background-image: url(../images/github.webp);
+	background-size: 100% 100%;
+	offset-path: path('M300 240');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:50%;
+}
+
+.redball {
+	background-color: #ff000080;
+    border-radius: 50%;
+    offset-path: path('M50 60 Q 77.5 10 120 60 Z');
+    offset-distance: 0%;
+    animation: red-ball .5s linear alternate;
+    display:none;
+}
+
+.greenball {
+	background-color: #00ff0080;
+    border-radius: 50%;
+    offset-path: path('M50 120 Q 77.5 10 120 60 Z');
+    offset-distance: 0%;
+    animation: red-ball .5s linear alternate;
+    display:none;
+}
+
+.blueball {
+    z-index:1;
+	background-color: #0000ff80;
+    border-radius: 50%;
+    offset-path: path('M50 180 Q 77.5 10 120 60 Z');
+    offset-distance: 0%;
+    animation: red-ball .5s linear alternate;
+    display:none;
+}
+
+.yellowball {
+    z-index:1;
+	background-color: #ffff0080;
+    border-radius: 50%;
+    offset-path: path('M50 240 Q 77.5 10 120 60 Z');
+    offset-distance: 0%;
+    animation: red-ball .5s linear alternate;
+    display:none;
+}
+
+@keyframes red-ball {
+    from {
+        offset-distance: 0%;
+    }
+    to {
+    	offset-distance: 100%;
+  	}
+}
+
+
+
+
+
+
+
+
+
+
+
+#puntero{
+    width: 54px;
+	height: 54px;
+	position: absolute;
+	background-color:#ff000050;
+	offset-path: path('M0 0');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:50%;
+}
+
+#puntero2{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#ff000050;
+	offset-path: path('M400 360');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+}
+
+#puntero3{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#00ff0050;
+	offset-path: path('M400 360');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+}
+
+#puntero4{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#0000ff50;
+	offset-path: path('M400 360');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+}
+
+#puntero5{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#ffff0050;
+	offset-path: path('M400 500');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+}
+
+#puntero6{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#00ffff50;
+	offset-path: path('M400 500');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+}
+
+#puntero7{
+    width: 70px;
+	height: 70px;
+	position: absolute;
+	background-color:#ff00ff50;
+	offset-path: path('M400 500');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.50);
+}
+
+#puntero22{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#ff000050;
+	offset-path: path('M70 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero222{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M70 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
+
+#puntero33{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#00ff0050;
+	offset-path: path('M180 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero333{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M180 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
+
+#puntero44{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#0000ff50;
+	offset-path: path('M290 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero444{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M290 400');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
+
+
+#puntero55{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#ffff0050;
+	offset-path: path('M70 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero555{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M70 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
+
+#puntero66{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#00ffff50;
+	offset-path: path('M180 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero666{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M180 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
+
+#puntero77{
+    width: 90px;
+	height: 90px;
+	position: absolute;
+	background-color:#ff00ff50;
+	offset-path: path('M290 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	display:none;
+}
+
+#puntero777{
+    width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color:#ffffff;
+	offset-path: path('M290 510');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+	display:none;
+}
