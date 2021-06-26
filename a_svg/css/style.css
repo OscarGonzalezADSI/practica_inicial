@@ -18,7 +18,7 @@ body{
 
 circle.btn{
 	background-image: url(../images/whatsapp.svg);
-  background-size: 10% 10%;
+    background-size: 10% 10%;
 	stroke-width:4px;
 	fill:#23345600;
 }
@@ -125,9 +125,20 @@ text.titulo{
 	animation: red-ball .5s linear alternate;
 }
 
+.fondoblanco_facebook {
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	background-color:rgb(255,255,255);
+	offset-path: path('M300 120');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:50%;
+}
+
 .facebook {
-	width: 31px;
-	height: 31px;
+	width: 27px;
+	height: 27px;
 	position: absolute;
 	background-image: url(../images/facebook.svg);
 	background-size: 100% 100%;
@@ -137,14 +148,25 @@ text.titulo{
 }
 
 .instagram {
-	width: 31px;
-	height: 31px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
 	background-image: url(../images/instagram.svg);
 	background-size: 100% 100%;
 	offset-path: path('M300 60.5');
 	offset-distance: 0%;
 	animation: red-ball .5s linear alternate;
+}
+
+.fondoblanco_instagram {
+	width: 33px;
+	height: 33px;
+	position: absolute;
+	background-color:rgb(255,255,255);
+	offset-path: path('M300 60.5');
+	offset-distance: 0%;
+	animation: red-ball .5s linear alternate;
+	border-radius:25%;
 }
 
 .fondoblanco {
