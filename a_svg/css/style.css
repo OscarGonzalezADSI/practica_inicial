@@ -140,7 +140,7 @@ text.titulo{
 	width: 31px;
 	height: 31px;
 	position: absolute;
-	background-image: url(../images/instagram.svg.webp);
+	background-image: url(../images/instagram.svg);
 	background-size: 100% 100%;
 	offset-path: path('M300 60.5');
 	offset-distance: 0%;
