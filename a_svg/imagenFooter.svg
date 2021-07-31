@@ -1,0 +1,24 @@
+<svg width="300" height="50" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg" >
+    <title>Estructura basica del SVG</title>
+    <style>
+    
+    	rect.principal{
+         	x:0px;
+        	y:0px;
+        	fill:#ff000050;
+        	width:300px;
+        	height:50px;
+    	}
+    
+        text{
+            font-family:Courier New, Courier, monospace; 
+            font-size: 24px;
+            fill:#000;
+            stroke:#000;
+            stroke-width:1;
+        }
+        
+    </style>
+	<rect class="principal" />
+	<text x="10" y="30">Profesores</text>
+</svg>

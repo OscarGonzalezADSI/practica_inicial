@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="js/cripto.js"></script>
+<script src="js/giros.js"></script>
+<script src="js/usoDatos.js"></script>
+</head>
+<body>
+
+<label>Registro de Usuario:</label></br><hr>
+<form onsubmit="return registro(this)">
+dni:<input id="dniRegistro" /><br>
+clave:<input id="claveRegistro" /><br>
+nombre:<input id="nombreRegistro" /><br>
+apellido:<input id="apellidoRegistro" /><br>
+saldo:<input id="saldoRegistro" /><br></br>
+<input class="submit" type="submit" value="submit"></br></br>
+</form>
+
+<label>Login:</label></br><hr>
+<form onsubmit="return login(this)">
+dni:<input id="dniLogin" /><br>
+clave:<input id="claveLogin" /><br><br>
+<input class="submit" type="submit" value="submit"></br></br>
+</form>
+
+<p id="rta"></p>
+
+<label>Hacer giro:</label></br><hr>
+<form id="miformulario" onsubmit="return myFunction(this)">
+
+id Usuario: <input type="text" id="idUsuario"><br>
+clave: <input type="text" id="clave"><br>
+id Receptor: <input type="text" id="idReceptor"><br>
+monto giro <input type="number" id="montoGiro"></br><br>
+
+<input class="submit" type="submit" value="submit"></br><br>
+
+<label>Remitente:</label></br><hr>
+nombre: <input id="nombre"><br>
+apellido: <input id="apellido"><br>
+saldo: <input id="saldo"><br></br>
+
+<label>Receptor:</label></br><hr>
+nombre: <input id="nombreReceptor"><br>
+apellido: <input id="apellidoReceptor"><br><br>
+
+<label>Giros:</label></br><hr>
+fecha: <input id="fecha"><br>
+idGiro: <input type="text" id="idGiro"><br>
+remitente: <input type="text" id="remitente"><br>
+receptor: <input tyoe="text" id="receptor"><br>
+monto Giro: <input id="montoRegistrado"><br></br></br></br>
+
+</form>
+
+</body>
+</html>

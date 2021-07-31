@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js/cripto.js"></script>
+<script src="js/giros.js"></script>
+<script src="js/usoDatos.js"></script>
+<link rel="stylesheet" href="css/estructura.css">
+</head>
+<body>
+
+
+<header>
+<ul>
+  <li><a href="#perfil" class="active">perfil</a></li>
+  <li><a href="#registro">registro</a></li>
+  <li><a href="#miformulario">Transferir</a></li>
+  <li><a href="#" id="salir">Cerrar</a></li>	
+</ul>
+</header>
+<section id="login">
+  <form onsubmit="return login(this)">
+  <fieldset>
+  <legend>Inicia Sesión.</legend>
+  <label for="dniLogin">usuario:</label>
+  <input id="dniLogin" placeholder="usuario / correo">
+  <label for="claveLogin">clave:</label>
+  <input id="claveLogin" type="password" placeholder="clave">
+  </fieldset>
+  <button id="submit" type="submit">Iniciar Sesión</button>
+  </form>
+</section>
+
+<section id="perfil">
+  <form onsubmit="return registro(this)">
+  <fieldset>
+  <legend>Tu información básica:</legend>
+  <label for="miUsuario">usuario:</label>
+  <input id="miUsuario" />
+  <label for="miNombre">nombre:</label>
+  <input id="miNombre" />
+  <label for="miApellido">apellido:</label>
+  <input id="miApellido" />
+  <label for="miSaldo">saldo:</label>
+  <input id="miSaldo" />
+  <label for="miRol">rol:</label>
+  <input id="miRol" />
+  </fieldset>
+  </form>
+</section>
+
+<section id="registro">
+  <form onsubmit="return registro(this)">
+  <fieldset>
+  <legend>Nuevo usuario:</legend>
+  <label for="dniRegistro">usuario:</label>
+  <input id="dniRegistro" placeholder="usuario" />
+  <label for="claveRegistro">clave:</label>
+  <input id="claveRegistro" placeholder="clave" />
+  <label for="nombreRegistro">nombre:</label>
+  <input id="nombreRegistro" placeholder="nombres" />
+  <label for="apellidoRegistro">apellido:</label>
+  <input id="apellidoRegistro" placeholder="apellidos" />
+  <label for="saldoRegistro">saldo:</label>
+  <input id="saldoRegistro" value=0 />
+  <label for="rolRegistro">rol:</label>
+  <input id="rolRegistro" value="usuario"/>
+  </label>
+  </fieldset>
+  <button type="submit">Registrar</button>
+  </form>
+</section>
+
+<section id="miformulario">
+  <form onsubmit="return myFunction(this)">
+  <fieldset>
+  <legend>Para realizar una transferencia, autoriza con tu usuario y clave.</legend>
+  <legend>Datos de autorización:</legend>
+  <label for="idUsuario">Tu usuario:</label>
+  <input type="text" id="idUsuario" placeholder="tu usuario">
+  <label for="clave">Tu clave:</label>
+  <input type="password" id="clave" placeholder="tu clave">
+  <legend>Datos de envío:</legend>
+  <label for="idReceptor">quien recibe:</label>
+  <input type="text" id="idReceptor" placeholder="usuario de quien recibe">
+  <label for="momtoGiro">Monto a enviar:</label>
+  <input id="montoGiro" value=0>
+  </fieldset>
+  <button type="submit">Transferir</button>
+  </form>
+</section>
+
+<section id="recibo">
+  <form onsubmit="return myFunction(this)">
+  <fieldset>
+  <legend>Informe de la operación:</legend>
+  <label for="fecha">
+  fecha: <input id="fecha">
+  </label>
+  <label for="idGiro">
+  idGiro: <input type="text" id="idGiro">
+  </label>
+  <label for="remitente">
+  usuario remitente: <input type="text" id="remitente">
+  </label>
+  <label for="receptor">
+  usuario receptor: <input tyoe="text" id="receptor">
+  </label>
+  <label for="montoRegistrado">
+  monto Giro: <input id="montoRegistrado">
+  </label>
+  </fieldset>
+  <fieldset>
+  <legend>Datos del remitente:</legend>
+  <label for="nombre">nombre:</label>
+  <input id="nombre">
+  <label for="apellido">apellido:</label>
+  <input id="apellido">
+  </fieldset>
+  <fieldset>
+  <legend>Datos de quien recibe:</legend>
+  <label for="nombreReceptor">nombre:</label>
+  <input id="nombreReceptor">
+  <label for="apellidoReceptor">apellido:</label>
+  <input id="apellidoReceptor">
+  </fieldset>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+</section>
+
+<script type="text/javascript">
+document.getElementById("perfil").setAttribute("style","display:none;")
+document.getElementById("registro").setAttribute("style","display:none;")
+document.getElementById("miformulario").setAttribute("style","display:none;")
+document.getElementById("recibo").setAttribute("style","display:none;")
+document.getElementById("salir").setAttribute("style","display:none;")
+document.getElementById("recibo").setAttribute("style","display:none;")
+function salir(){
+    prueba.salir();
+}
+
+var el = document.getElementById("salir");
+el.addEventListener("click", salir, false);
+</script>
+
+</body>
+</html>

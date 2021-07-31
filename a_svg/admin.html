@@ -1,0 +1,134 @@
+<!--
+siseñado bajo las recomendaciones de mozilla.org
+https://developer.mozilla.org/es/docs/Learn/Forms/How_to_structure_a_web_form
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="js/cripto.js"></script>
+<script src="js/giros.js"></script>
+<script src="js/usoDatos.js"></script>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<button href="#" id="salir">Cerrar Sesion</button>
+
+<form id="login" onsubmit="return login(this)">
+  <fieldset>
+	<legend>Login:</legend>
+	<label for="dniLogin">dni:</label>
+	<input id="dniLogin">
+	<label for="claveLogin">clave:</label>
+	<input id="claveLogin" type="password">
+  </fieldset>
+  <button type="submit">Iniciar Sesión</button>
+</form>
+
+<form id="perfil" onsubmit="return registro(this)">
+  <fieldset>
+    <legend>Bienvenido:</legend>
+	<label for="miUsuario">dni:</label>
+	<input id="miUsuario" />
+	<label for="miNombre">nombre:</label>
+	<input id="miNombre" />
+	<label for="miApellido">apellido:</label>
+	<input id="miApellido" />
+	<label for="miSaldo">saldo:</label>
+	<input id="miSaldo" />
+	<label for="miRol">rol:</label>
+	<input id="miRol" />
+  </fieldset>
+  <button type="submit">Actualizar</button>
+</form>
+
+
+<form id="registro" onsubmit="return registro(this)">
+  <fieldset>
+	<legend>Registro de usuarios:</legend>
+	<label for="dniRegistro">dni:</label>
+	<input id="dniRegistro" />
+	<label for="claveRegistro">clave:</label>
+	<input id="claveRegistro" />
+	<label for="nombreRegistro">nombre:</label>
+	<input id="nombreRegistro" />
+	<label for="apellidoRegistro">apellido:</label>
+	<input id="apellidoRegistro" />
+	<label for="saldoRegistro">saldo:</label>
+	<input id="saldoRegistro" />
+	<label for="rolRegistro">rol:</label>
+	<input id="rolRegistro" />
+	</label>
+  </fieldset>
+  <button type="submit">Registrar</button></br></br>
+</form>
+
+<form id="miformulario" onsubmit="return myFunction(this)">
+  <fieldset>
+	<legend>Realizar giro:</legend>
+	<label for="idUsuario">id Usuario:</label>
+	<input type="text" id="idUsuario">
+	<label for="clave">clave:</label>
+	<input type="password" id="clave">
+	<label for="idReceptor">id Receptor:</label>
+	<input type="text" id="idReceptor">
+	<label for="momtoGiro">monto giro</label>
+	<input type="number" id="montoGiro">
+  </fieldset>
+  <button type="submit">Trasferir</button></br><br>
+</form>
+
+<form id="recibo" onsubmit="return myFunction(this)">
+  <fieldset>
+	<legend>Informe de la operación:</legend>
+	<label for="fecha">
+		fecha: <input id="fecha">
+	</label>
+	<label for="idGiro">
+		idGiro: <input type="text" id="idGiro">
+	</label>
+	<label for="remitente">
+		remitente: <input type="text" id="remitente">
+	</label>
+	<label for="receptor">
+		receptor: <input tyoe="text" id="receptor">
+	</label>
+	<label for="montoRegistrado">
+		monto Giro: <input id="montoRegistrado">
+	</label>
+  </fieldset>
+  <fieldset>
+	<legend>Remitente:</legend>
+	<label for="nombre">nombre:</label>
+	<input id="nombre">
+	<label for="apellido">apellido:</label>
+	<input id="apellido">
+  </fieldset>
+  <fieldset>
+	<legend>Receptor:</legend>
+	<label for="nombreReceptor">nombre:</label>
+	<input id="nombreReceptor">
+	<label for="apellidoReceptor">apellido:</label>
+	<input id="apellidoReceptor">
+  </fieldset>
+</form>
+
+<script type="text/javascript">
+document.getElementById("perfil").setAttribute("style","display:none;")
+document.getElementById("registro").setAttribute("style","display:none;")
+document.getElementById("miformulario").setAttribute("style","display:none;")
+document.getElementById("recibo").setAttribute("style","display:none;")
+document.getElementById("salir").setAttribute("style","display:none;")
+document.getElementById("recibo").setAttribute("style","display:none;")
+function salir(){
+    prueba.salir();
+}
+
+var el = document.getElementById("salir");
+el.addEventListener("click", salir, false);
+</script>
+
+</body>
+</html>

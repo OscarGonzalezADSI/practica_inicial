@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<input id="salida" type="text">
+<button id="enviar">enviar</button>
+<script type="text/javascript">
+/*
+documwntacion moneda:
+https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+*/
+
+var nro = document.getElementById("salida");
+var enviar = document.getElementById("enviar");
+
+function clear(){
+	nro.value = "";
+}
+
+function aTexto(){
+	let nroTransformado = new Number(nro.value);
+	let moneda = {
+		style: "currency",
+		currency: "EUR"
+	}
+	nro.value = nroTransformado.toLocaleString("es-CO", moneda);
+}
+
+function aNumero(){
+	let rta = nro.value;
+	let aaa = rta.replace("EUR",'');
+	let bbb = aaa.replace(/\./g, "");
+	let ccc = bbb.replace(/,/,".")
+	let ddd = parseFloat(ccc);
+	return ddd;
+}
+
+function getNumero(){
+	let getNro = aNumero();
+	console.log(getNro);
+}
+
+nro.addEventListener("click", clear, false);
+nro.addEventListener("mouseout", aTexto, false);
+enviar.addEventListener("click", getNumero, false);
+
+window.addEventListener('DOMContentLoaded', (event) => {
+	nro.value =1000000;
+    aTexto();
+});
+
+</script>
+
+</body>
+</html>
