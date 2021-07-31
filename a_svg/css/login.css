@@ -1,0 +1,47 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background-color:#000000;
+    color:white;
+}
+
+div.labelUser{
+    offset-path: path('M125,140');
+    width:100px;
+}
+
+div.user{
+    offset-path: path('M125,155');
+    width:100px;
+}
+
+div.labelPassword{
+    offset-path: path('M125,160');
+    width:100px;
+}
+
+div.password{
+    offset-path: path('M125,175');
+    width:100px;
+}
+
+input{
+    font-size:22px;
+    border-radius:25px;
+    padding-left:15px;
+    outline: none;
+    width:200px;
+    height:35px;
+}
+
+div.submit{
+    offset-path: path('M135,190');
+    width:100px;
+}
+
+input.submit{
+    padding-left:0px;
+}

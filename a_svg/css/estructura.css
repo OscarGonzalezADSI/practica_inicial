@@ -1,0 +1,96 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color:#111111;
+}
+
+form{
+    color:#ffffff;
+    background-color:#22222290;
+    border-radius:25px;
+    margin:30px;
+    padding:20px;
+    text-align:right;
+}
+
+form label{
+	display:block;
+	margin-top:10px;
+}
+
+form input{
+    font-size:22px;
+    border-radius:10px;
+    padding-left:10px;
+    outline: none;
+    width:248px;
+    height:35px;
+    background-color:#ffffff33;
+    color:#fff;
+}
+
+form fieldset{
+	margin-top:25px;
+	border:0px;
+	display:block;
+	text-align:left;
+}
+
+form button{
+	border:2px solid #04AA6D;
+	border-radius:10px;
+	background-color:#04AA6D50;
+	color:#ffffff;
+	padding:5px;
+	height:35px;
+	margin-top:30px;
+}
+
+form legend{
+	border:2px solid #04AA6D;
+	border-radius:10px;
+	background-color:#22222290;
+	color:#fffff;
+	padding:5px;
+	margin-top:25px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+section{
+  padding-top:2px;
+  margin-top:30px;
+  height:600px;
+}

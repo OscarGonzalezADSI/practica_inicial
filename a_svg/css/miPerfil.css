@@ -1,0 +1,72 @@
+*{
+	padding:0px;
+	margin: 0px;
+}
+
+body{
+	background-image:  url("../images/flor.jpg"),
+	                   url("../images/flor2.jpg");
+	background-position:top center;
+}
+
+container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(100px, 115px);
+}
+
+section{
+    font-size:16px;
+    color:#000000;
+    padding:10px;
+    background: linear-gradient(225deg, #ffffff, #ffffff01);
+	animation-duration: 5s;
+	animation-name: slidein;
+}
+
+section:nth-child(2n){
+	color:#000000;
+	background: linear-gradient(225deg, #00ff0080, #ffffff01);
+	text-shadow:1px 1px 1px #0000000f;
+}
+
+section:nth-child(4),
+section:nth-child(7),
+section:nth-child(8),
+section:nth-child(10),
+section:nth-child(11),
+section:nth-child(12),
+section:nth-child(13),
+section:nth-child(14){
+	background: linear-gradient(225deg, #ffffff00, #ffffff00);
+}
+
+section:nth-child(1):hover,
+section:nth-child(2):hover,
+section:nth-child(3):hover,
+section:nth-child(5):hover,
+section:nth-child(6):hover,
+section:nth-child(9):hover,
+section:nth-child(15):hover{
+	color:#000000;
+	background: linear-gradient(225deg, #00ff0090, #ffffff);
+	text-shadow:1px 1px 1px #0000000f;
+}
+
+@keyframes slidein {
+    from {
+    	margin-left: 300%;
+    	width: 100%;
+    	border-radius:100px;
+    	transform: rotate(45deg);
+  	}
+
+	to {
+    	margin-left: 0%;
+    	width: 84%;
+    	border-radius:0px;
+    	transform: rotate(0deg);
+	}
+  
+}

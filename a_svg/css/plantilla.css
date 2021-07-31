@@ -1,0 +1,180 @@
+*{
+	padding:0px;
+	margin: 0px;
+}
+
+body{
+	background-image:  url("../images/flor.jpg"),
+	                   url("../images/flor2.jpg");
+	background-position:top center;
+}
+
+container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(100px, 115px);
+}
+
+section{
+    font-size:16px;
+    color:#000000;
+    padding:10px;
+    background: linear-gradient(225deg, #ffffff, #ffffff01);
+	animation-duration: 5s;
+	animation-name: slidein;
+}
+
+section:nth-child(2n){
+	color:#000000;
+	background: linear-gradient(225deg, #00ff0080, #ffffff01);
+	text-shadow:1px 1px 1px #0000000f;
+}
+
+section:nth-child(4),
+section:nth-child(7),
+section:nth-child(8),
+section:nth-child(10),
+section:nth-child(11),
+section:nth-child(12),
+section:nth-child(13),
+section:nth-child(14){
+	background: linear-gradient(225deg, #ffffff00, #ffffff00);
+}
+
+section:nth-child(1):hover,
+section:nth-child(2):hover,
+section:nth-child(3):hover,
+section:nth-child(5):hover,
+section:nth-child(6):hover,
+section:nth-child(9):hover,
+section:nth-child(15):hover{
+	color:#000000;
+	background: linear-gradient(225deg, #00ff0090, #ffffff);
+	text-shadow:1px 1px 1px #0000000f;
+}
+
+@keyframes slidein {
+    from {
+    	margin-left: 300%;
+    	width: 100%;
+    	border-radius:100px;
+    	transform: rotate(45deg);
+  	}
+
+	to {
+    	margin-left: 0%;
+    	width: 84%;
+    	border-radius:0px;
+    	transform: rotate(0deg);
+	}
+  
+}
+
+svg.header{
+	padding:0px;
+	margin:0px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	width:100%;
+}
+
+svg.header text{
+display:block;
+}
+
+svg.header text.tableName{
+	font-family:Courier New, Courier, monospace; 
+    font-size: 40px;
+    fill:#000000;
+    stroke:#000000;
+    stroke-width:3;
+}
+
+svg.header rect.record{
+	fill:#00000055;
+	opacity:1;
+	stroke:rgb(255,255,255);
+	y:55px;
+}
+
+svg.header rect.container{
+	/*fill:#000000f0;*/
+	fill:#ffffff;
+	opacity:1;
+	stroke:rgb(255,255,255);
+	x:0px;
+	y:0px;
+	ry:0px;
+	rx:0px;
+	width:360px;
+	height:100px;
+}
+
+svg.header text.titulo{
+	fill:#000;
+	stroke:#000;
+	stroke-width:1;
+}
+
+svg.footer{
+	padding:0px;
+	margin:0px;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 10px;
+}
+
+svg.footer text{
+    display:block;
+}
+
+svg.footer rect{
+		stroke-width:2;
+		x:50px;
+		ry:10px;
+		rx:10px;
+}
+
+svg.footer rect.menu{
+	/*fill:#ff000050;*/
+	fill:#000000;
+    stroke:rgb(255,255,255);
+    opacity:1;
+    y:10px;
+    width:50px;
+    height:50px;
+}
+svg.footer rect.containerFooter{
+    /*fill:#000000f0;*/
+    fill:#ffffff;
+    stroke:rgb(255,255,255);
+    opacity:0.5;
+    x:0px;
+    y:0px;
+    ry:0px;
+    rx:0px;
+    width:360px;
+    height:100px;
+}
+
+svg.footer rect.btnFirst{
+	x:10px;
+}
+
+svg.footer rect.btnSecond{
+	x:82px;
+}
+
+svg.footer rect.btnThird{
+	x:155px;
+}
+
+svg.footer rect.btnFourth{
+    x:228px;
+}
+
+svg.footer rect.btnFifth{
+    x:300px;
+}

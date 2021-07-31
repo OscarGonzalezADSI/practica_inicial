@@ -477,3 +477,213 @@ text.titulo{
 	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
 	display:none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.materias{
+	background-color:#0000ff20;
+    //background-color:#ffffff;
+}
+
+rect{
+	fill:rgb(255,255,255);
+	opacity:0.2;
+	stroke-width:2;
+	stroke:rgb(10,10,255);
+	x:50px;
+	ry:10px;
+	rx:10px;
+	width:255px;
+	height:40px;
+}
+	
+rect.dataX{
+	/*fill:#ff000000;*/
+	fill:#ffffff;
+	opacity:1;
+	stroke:rgb(255,255,255);
+	x:5px;
+	y:60px;
+	height:30px;
+}
+
+rect.boxNumeral{
+    width:40px;
+	height:40px;
+	x:5px;
+}
+rect.boxAdmin{
+    width:40px;
+	height:40px;
+	x:310;
+}
+
+rect.dataX0{x:55px; width:85px;}
+rect.dataX1{x:145px; width:115px;}
+rect.dataX2{x:265px; width:35px;}
+
+svg.header{
+	padding:0px;
+	margin:0px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	width:100%;
+}
+
+svg.header text{
+display:block;
+}
+
+svg.header text.tableName{
+	font-family:Courier New, Courier, monospace; 
+    font-size: 40px;
+    fill:#000000;
+    stroke:#000000;
+    stroke-width:3;
+}
+
+svg.header rect.record{
+	fill:#00000055;
+	opacity:1;
+	stroke:rgb(255,255,255);
+	y:55px;
+}
+
+svg.header rect.container{
+	/*fill:#000000f0;*/
+	fill:#ffffff;
+	opacity:1;
+	stroke:rgb(255,255,255);
+	x:0px;
+	y:0px;
+	ry:0px;
+	rx:0px;
+	width:360px;
+	height:100px;
+}
+
+svg.header text.titulo{
+	fill:#000;
+	stroke:#000;
+	stroke-width:1;
+}
+
+svg.section{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:500px;
+}
+
+svg.section text{
+    display:block;
+    fill:#000;
+    stroke:#000;
+    stroke-width:0;
+}
+
+svg.section rect.data0{y:10px;}
+svg.section rect.data1{y:55px;}
+svg.section rect.data2{y:100px;}
+svg.section rect.data3{y:145px;}
+svg.section rect.data4{y:190px;}
+svg.section rect.data5{y:235px;}
+svg.section rect.data6{y:280px;}
+svg.section rect.data7{y:325px;}
+svg.section rect.data8{y:370px;}
+
+svg.section rect.registro0{y:5px;}
+svg.section rect.registro1{y:50px;}
+svg.section rect.registro2{y:95px;}
+svg.section rect.registro3{y:140px;}
+svg.section rect.registro4{y:185px;}
+svg.section rect.registro5{y:230px;}
+svg.section rect.registro6{y:275px;}
+svg.section rect.registro7{y:320px;}
+svg.section rect.registro8{y:365px;}
+
+svg.section rect.data{
+	height:30px;
+}
+
+svg.footer{
+	padding:0px;
+	margin:0px;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0px;
+}
+
+svg.footer text{
+    display:block;
+}
+
+svg.footer rect{
+		stroke-width:2;
+		x:50px;
+		ry:10px;
+		rx:10px;
+}
+
+svg.footer rect.menu{
+	/*fill:#ff000050;*/
+	fill:#000000;
+    stroke:rgb(255,255,255);
+    opacity:1;
+    y:10px;
+    width:50px;
+    height:50px;
+}
+svg.footer rect.containerFooter{
+    /*fill:#000000f0;*/
+    fill:#ffffff;
+    stroke:rgb(255,255,255);
+    opacity:0.5;
+    x:0px;
+    y:0px;
+    ry:0px;
+    rx:0px;
+    width:360px;
+    height:100px;
+}
+
+svg.footer rect.btnFirst{
+	x:10px;
+}
+
+svg.footer rect.btnSecond{
+	x:82px;
+}
+
+svg.footer rect.btnThird{
+	x:155px;
+}
+
+svg.footer rect.btnFourth{
+    x:228px;
+}
+
+svg.footer rect.btnFifth{
+    x:300px;
+}
