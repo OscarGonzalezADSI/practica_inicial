@@ -30,4 +30,9 @@ class MyMove extends Buttons{
 	Touch7() {
 		this.myMoveTouch7(this.x,this.y);
 	}
+	
+	TouchReg0() {
+	    this.myMoveReg0(this.x,this.y);
+	}
+	
 }

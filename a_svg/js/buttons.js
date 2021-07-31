@@ -349,4 +349,5 @@ class Buttons {
 		my.mySlide2(70);
 		},2300,"JavaScript");
 	}
+	
 }
