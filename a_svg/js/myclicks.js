@@ -65,19 +65,22 @@ class MyClicks{
 	click2(event) {
 		var el222 = document.getElementById("puntero222");
 		el222.style.boxShadow = "2px 2px 2px 2px #00000000";
-		window.location="https://es.m.wikipedia.org/wiki/HTML5";
+		//window.location="https://es.m.wikipedia.org/wiki/HTML5";
+		window.location="miPerfil.html";
 	}
 		
 	click3(event) {
 		var el333 = document.getElementById("puntero333");
 		el333.style.boxShadow = "2px 2px 2px 2px #00000000";
-		window.location="https://es.m.wikipedia.org/wiki/Hoja_de_estilos_en_cascada";
+		//window.location="https://es.m.wikipedia.org/wiki/Hoja_de_estilos_en_cascada";
+		window.location="miPerfil.html";
 	}
 		
 	click4(event) {
 		var el444 = document.getElementById("puntero444");
 		el444.style.boxShadow = "2px 2px 2px 2px #00000000";
-		window.location="https://es.m.wikipedia.org/wiki/JavaScript";
+		//window.location="https://es.m.wikipedia.org/wiki/JavaScript";
+		window.location="estructura.html";
 	}
 		
 	click5(event) {
@@ -95,7 +98,9 @@ class MyClicks{
 	click7(event) {
 		var el777 = document.getElementById("puntero777");
 		el777.style.boxShadow = "2px 2px 2px 2px #00000000";
-		window.location="https://es.m.wikipedia.org/wiki/Gr%C3%A1ficos_vectoriales_escalables";
+		//window.location="https://es.m.wikipedia.org/wiki/Gr%C3%A1ficos_vectoriales_escalables";
+	    //window.location="view.html";
+	    window.location="proyectosvg/fibonacci.html";
 	}
 	
 	moveTouch2(event) {
