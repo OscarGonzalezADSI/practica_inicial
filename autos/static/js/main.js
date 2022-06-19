@@ -1,0 +1,10 @@
+generate_table(data);
+generate_tablew("../images/vista1.png", "ESTACAS");
+generate_tablew("../images/vista2.png", "FURGON");
+generate_tablew("../images/vista3.png", "NOSE");
+generate_tablew("../images/captura11a.png", "INTERIORES");
+generate_tablew("../images/captura11b.png", "INTERIORES");
+generate_tablew("../images/captura11d.png", "INTERIORES");
+generate_tablew("../images/captura10b.png", "MOTOR");
+generate_tablew("../images/captura19.png", "GARANTÍA");
+//generate_tablew("../images/captura17.png", "MARCA");
