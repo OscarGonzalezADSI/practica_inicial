@@ -1,0 +1,19 @@
+Gestión 2022 07 22
+
+Asunto: Limpieza de código página principal.
+
+Problema:
+Se evidenció que el código presenta actualmente script y 
+estilos en linea en el html. Esto impide la eficiente carga del 
+diseño de la página.
+
+Intervención:
+Se creó la carpeta "css" para hacer los ajustes necesarios
+correspondientes a los estilos de la página web y se recogió 
+el código disperso encontrado en un único archivo para su carga
+eficiente.
+
+Gestión realizada por:
+Óscar Iván González Peña - 1090384538
+To. Análisis y Desarrollo de Sistemas de Información. - ADSI-SENA
+Fecha de gestión: 2022-07-22
