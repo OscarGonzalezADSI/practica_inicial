@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/main.css" >
+<script src="./js/main.js"></script>
+</head>
+<body>
+<form id="registro" action="welcome.php?accion=registrar" method="post">
+
+  <fieldset class="user">
+    <h2>Registro de usuario:</h2>
+  </fieldset>
+  
+  <fieldset class="checkbox">
+    <legend>Deseo ser...</legend>
+    <fieldset>
+      <label for="rolArrendador">Arrendador.
+        <input id="rolArrendador" name="rolArrendador" type="checkbox" checked="checked">
+        <span class="geekmark"></span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="rolArrendatario">Arrendatario.
+        <input id="rolArrendatario" name="rolArrendatario" type="checkbox" checked="checked">
+        <span class="geekmark"></span>
+      </label>
+    </fieldset>
+    <p>Usted podrá arrendar y/o dejar en arriendo.</p>
+  </fieldset>
+  
+  <fieldset class="checkbox">
+    <legend>Políticas:</legend>
+    <fieldset>
+      <label for="aceptaPoliticas">Acepto los términos y condiciones.
+        <input id="aceptaPoliticas" name="aceptaPoliticas"  type="checkbox">
+        <span class="geekmark"></span>
+      </label>
+    </fieldset>
+  </fieldset>
+  
+  <fieldset class="submit">
+    <input type="submit" id="submit" value="Registrarme">
+  </fieldset>
+  
+</form>
+
+</body>
+</html>
