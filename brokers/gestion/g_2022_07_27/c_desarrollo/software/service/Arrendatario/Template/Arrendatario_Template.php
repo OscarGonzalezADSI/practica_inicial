@@ -18,12 +18,12 @@ function arrendatario_Template($arreglo)
 <body>
 <div class="w3-top">
   <div class="w3-bar w3-lime">
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/persona.php?accion=ver" class="w3-bar-item w3-button">personas</a>
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/arrendatario.php?accion=ver" class="w3-bar-item w3-button">arrendatarios</a>
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/arrendador.php?accion=ver" class="w3-bar-item w3-button">arrendadores</a>
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/pago.php?accion=ver" class="w3-bar-item w3-button">pagos</a>
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/propiedad.php?accion=ver" class="w3-bar-item w3-button">propiedades</a>
-    <a href="http://localhost/web/practica_inicial-master/brokers/gestion/g_2022_07_26/c_desarrollo/software/contrato.php?accion=ver" class="w3-bar-item w3-button">contratos</a>
+    <a href="./persona.php?accion=ver" class="w3-bar-item w3-button">personas</a>
+    <a href="./arrendatario.php?accion=ver" class="w3-bar-item w3-button">arrendatarios</a>
+    <a href="./arrendador.php?accion=ver" class="w3-bar-item w3-button">arrendadores</a>
+    <a href="./pago.php?accion=ver" class="w3-bar-item w3-button">pagos</a>
+    <a href="./propiedad.php?accion=ver" class="w3-bar-item w3-button">propiedades</a>
+    <a href="./contrato.php?accion=ver" class="w3-bar-item w3-button">contratos</a>
   </div>
 </div>
 <br><br>
