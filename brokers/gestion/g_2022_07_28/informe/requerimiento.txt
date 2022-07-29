@@ -1,0 +1,93 @@
+---------------------------------------------------------------------------------------------------
+Diseño lógico de experiencia de usuario                                              2022 - 07 - 28
+---------------------------------------------------------------------------------------------------
+Óscar Iván González Peña -   1090384538
+To. Análisis y Desarrollo de Sistemas de Información -  ADSI - SENA
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+Experiencia de usuario
+---------------------------------------------------------------------------------------------------
+En toda experiencia de usuario siempre se debe distinguir la experiencia de entrada por primera vez
+al sistema del uso normal de la plataforma. Asi el caso de uso de la aplicación web queda bajo 
+estos dos aspectos.
+
+    1- Experiencia de usuario de entrada por primera vez.
+    2- Experiencia de usuario ya existente.
+
+A continuación se describe textualmente la experiencia de usuario que exigen las entidades que 
+poseen amplia experiencia en la implementación de sistemas amigables para el usuario final.
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+Experiencia de usuario por primera vez:
+---------------------------------------------------------------------------------------------------
+
+1 - En el momento en que la persona se registra se puede registrar como arrendador y/o arrendatario.    (completado.)
+    
+- Crear los formularios para ingresar registros en las tablas que se han creado hasta el momento.       (usabilidad del sistema).
+- Filtro de busqueda inteligente de toda la información relacionada con un numero de cedula.            (gestión administrativo).
+- El usuario podrá ver toda la información que le compete dentro del sistema en una sola página.        (expreriencia de usuario / beneficiario).
+
+2 - Si se registra como arrendador podrá pasar a:
+    - registrar propiedad.
+
+3 - Si se registra como arrendatario podrá pasar a:
+    - seleccionar propiedad en arriendo.
+	- solicitar contrato de arrendamiento.
+
+4 - Si se registra como arredador y tambien como arrendatario podrá pasar a:
+    - registrar propiedad.
+    - seleccionar propiedad en arriendo.
+	- solicitar contrato de arrendamiento como arrendatario.
+
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+Experiencia de usuario ya existente:
+---------------------------------------------------------------------------------------------------
+
+1. si el usuario ya existe y es arrendador:
+	- visualiza sus propiedades que faltan por tener contrato de arrendamiento.
+    - visualiza sus propiedades que ya tiene contrato de arrendamiento.
+	    - al seleccionar la propiedad podra visualizar:
+		    - detalle del contrato de arrendamiento.
+		    - histórico de pagos mensuales del contrato.
+
+2. si el usuario ya existe y es arrendatario:
+    - visualiza las propiedades que tiene contratadas en arrendamiento.
+	    - al seleccionar la propiedad podrá visualizar:
+		    - detalle del contrato de arrendamiento.
+		    - histórico de pagos mensuales del contrato.
+			
+3. si el usuario ya existe, está como arrendador y tambien como arrendatario podrá:
+
+	- visualiza sus propiedades que faltan por tener contrato de arrendamiento.
+    - visualiza sus propiedades que ya tiene contrato de arrendamiento.
+	    - al seleccionar la propiedad podra visualizar:
+		    - detalle del contrato de arrendamiento.
+		    - histórico de pagos mensuales del contrato.
+			
+    - visualiza las propiedades que tiene contratadas en arrendamiento.
+	    - al seleccionar la propiedad podrá visualizar:
+		    - detalle del contrato de arrendamiento.
+		    - histórico de pagos mensuales del contrato.	
+			
+---------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------
+                                                            Diseño lógico de experiencia de usuario
+---------------------------------------------------------------------------------------------------
+                                                            Óscar Iván González Peña -   1090384538
+                                To. Análisis y Desarrollo de Sistemas de Información -  ADSI - SENA
+---------------------------------------------------------------------------------------------------
+                                                                                     2022 - 07 - 28
+---------------------------------------------------------------------------------------------------
