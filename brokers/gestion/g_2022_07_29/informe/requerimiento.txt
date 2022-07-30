@@ -28,10 +28,31 @@ Experiencia de usuario por primera vez:
 ---------------------------------------------------------------------------------------------------
 
 1 - En el momento en que la persona se registra se puede registrar como arrendador y/o arrendatario.    (completado.)
-    
+
+
+
+---------------------------------------------------------------------------------------------------
+Actividades a superar antes de pasar al siguiente punto.
+---------------------------------------------------------------------------------------------------
 - Crear los formularios para ingresar registros en las tablas que se han creado hasta el momento.       (usabilidad del sistema).
-- Filtro de busqueda inteligente de toda la información relacionada con un numero de cedula.            (gestión administrativo).
-- El usuario podrá ver toda la información que le compete dentro del sistema en una sola página.        (expreriencia de usuario / beneficiario).
+- Filtro de busqueda inteligente de toda la información relacionada con un numero de cedula.            (completado).
+- El usuario podrá ver toda la información que le compete dentro del sistema en una sola página.        (en desarrollo).
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+- crear una restricción por medio de un disparador que verique que solo se pueda crear un contrato
+  de arrendamiento si la propiedad está asignada al arrendador dentro de la base de datos.              (vulnerabilidad detectada.)
 
 2 - Si se registra como arrendador podrá pasar a:
     - registrar propiedad.

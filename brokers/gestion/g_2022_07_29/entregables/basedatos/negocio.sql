@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-07-2022 a las 16:24:10
+-- Tiempo de generación: 30-07-2022 a las 02:13:03
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -70,7 +70,8 @@ INSERT INTO `arrendatario` (`id_arrendatario`, `persona_id`, `fecha_registro`) V
 (7, 4445, '0000-00-00 00:00:00'),
 (8, 777, '2022-07-22 20:03:27'),
 (9, 5555, '2022-07-22 20:03:58'),
-(10, 5556, '2022-07-22 20:29:37');
+(10, 5556, '2022-07-22 20:29:37'),
+(11, 1, '2022-07-29 22:04:15');
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,7 @@ CREATE TABLE `contrato` (
   `arrendador_id` int(11) DEFAULT NULL,
   `arrendatario_id` int(11) DEFAULT NULL,
   `propiedad_id` int(11) DEFAULT NULL,
-  `fecha_registro` varchar(50) DEFAULT NULL
+  `fecha_registro` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -91,10 +92,11 @@ CREATE TABLE `contrato` (
 --
 
 INSERT INTO `contrato` (`id_contrato`, `arrendador_id`, `arrendatario_id`, `propiedad_id`, `fecha_registro`) VALUES
-(1, 1, 1, 1, ''),
-(2, 3, 5, 4, NULL),
-(3, 3, 6, 3, NULL),
-(4, 3, 5, 4, NULL);
+(1, 1, 1, 1, '2022-07-29 22:05:39'),
+(2, 3, 9, 4, '2022-07-29 22:05:47'),
+(3, 3, 6, 3, '2022-07-29 22:05:53'),
+(4, 3, 5, 5, '2022-07-29 22:06:00'),
+(5, 2, 11, 4, '2022-07-29 22:06:07');
 
 -- --------------------------------------------------------
 
@@ -114,7 +116,9 @@ CREATE TABLE `pago` (
 --
 
 INSERT INTO `pago` (`id_pago`, `contrato_id`, `monto_pago`, `fecha_registro`) VALUES
-(1, 1, '5555', '2022-07-27 16:14:40');
+(1, 1, '5555', '2022-07-27 16:14:40'),
+(3, 2, '500000', '2022-07-29 19:26:11'),
+(4, 5, '500000', '2022-07-29 22:10:00');
 
 -- --------------------------------------------------------
 
@@ -143,16 +147,16 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id_persona`, `nombres`, `apellidos`, `correo`, `contrasena`, `contrasenaP`, `cedula`, `celular`, `direccion`, `rolArrendador`, `rolArrendatario`, `aceptaPoliticas`, `fecha_registro`) VALUES
-(1, 'oscar', 'gonzalez', '', '', '', '1090384538', '3228858439', 'Mz C4 casa 21 torcoroma 2', 0, 0, '', '0000-00-00 00:00:00'),
-(2, 'Manuel', 'Sanchez', '', '', '', '1090384545', '3134563202', 'Mz C4 casa 16 aniversario 2', 0, 0, '', '0000-00-00 00:00:00'),
+(1, 'oscar', 'gonzalez', 'oigonzalezp@gmail.com', '', '', '1090384538', '3228858439', 'Mz C4 casa 21 torcoroma 2', 1, 1, '', '2022-07-29 22:03:07'),
+(2, 'Manuel', 'Sanchez', 'manuel@gmail.com', '', '', '1090384545', '3134563202', 'Mz C4 casa 16 aniversario 2', 0, 0, '', '2022-07-29 23:23:50'),
 (3, 'maria', 'cifuentes', '', '', '', '446262462', '3112245368', 'mz 14 casa22 Grisales', 0, 1, '', '0000-00-00 00:00:00'),
-(666, 'carlos', 'martinez', '', '', '', '1090343457', '3224534566', 'mz 14 casa22 Campo Alegre', 1, 1, '', NULL),
+(666, 'carlos', 'martinez', '', '', '', '1090343457', '3224534566', 'mz 14 casa22 Campo Alegre', 1, 1, '', '2022-07-30 00:02:10'),
 (777, 'maria', 'angustina', '', '', '', '1090342367', '3224567677', 'mz 14 casa22 Conjunto las flores', 0, 1, '', '2022-07-22 20:03:27'),
-(888, 'ridrigo', 'bonillla', '', '', '', '109023456', '3224567899', 'mz 14 casa 34 Monte Alegre', 0, 1, '', NULL),
-(1111, 'camilo', 'daza', '', '', '', '1090344656', '3224567856', 'mz 14 casa22 centro', 0, 0, '', '0000-00-00 00:00:00'),
+(888, 'rodrigo', 'bonillla', '', '', '', '109023456', '3224567899', 'mz 14 casa 34 Monte Alegre', 0, 1, '', '2022-07-30 00:02:31'),
+(1111, 'camilo', 'daza', 'camilo@gmail.com', '', '', '1090344656', '3224567856', 'mz 14 casa22 centro', 0, 0, '', '2022-07-29 22:34:47'),
 (4444, '444', '444', '', '', '', '4444', '444', '4444', 0, 0, '', NULL),
 (4445, '999', '999', '', '', '', '999', '999', '9999', 0, 1, '', '2022-07-22 19:59:30'),
-(5555, 'carlos', 'montiel', 'carlos@gmail.com', '', '', '1090345648', '3224567455', 'mz 14 casa22 Campo Alegre', 1, 1, '', '2022-07-22 20:03:58'),
+(5555, 'oscar', 'gonzalez', 'carlos@gmail.com', '', '', '10903845387', '3224567455', 'mz 14 casa22 Campo Alegre', 1, 1, '', '2022-07-22 20:03:58'),
 (5556, 'maria', 'jose', 'maria@gmail.com', '', '', '1122234344', '3224545678', 'mz 14 casa44 Campo Alegre', 1, 1, '', '2022-07-22 20:29:37'),
 (5557, 'oscar', 'gonzalez', 'gonzalez@gmail.com', 'wwwww', 'wwwww', NULL, NULL, NULL, 0, 0, 'on', '2022-07-27 15:51:40'),
 (5558, 'maria', 'bustos', 'carvajal@gmail.com', '2222', '2222', NULL, NULL, NULL, 0, 0, 'on', '2022-07-27 16:17:33'),
@@ -197,10 +201,10 @@ CREATE TABLE `propiedad` (
 --
 
 INSERT INTO `propiedad` (`id_propiedad`, `arrendador_id`, `ciudad`, `barrio`, `direccion`, `fecha_registro`) VALUES
-(1, 1, 'cucuta', 'torcoroma2', 'mz c4 L21 torcoroma2', '0000-00-00 00:00:00'),
-(3, 3, 'cucuta', 'centro', '', '2022-07-22 20:07:43'),
-(4, 3, 'cucuta', 'las florez', '', '2022-07-22 20:08:01'),
-(5, 4, 'cucuta', 'centro alfaro', '', '2022-07-22 20:08:15');
+(1, 1, 'cucuta', 'torcoroma2', 'mz c4 L21 torcoroma2', '2022-07-29 22:16:46'),
+(3, 1, 'cucuta', 'centro', 'Av 1 Este Los Acacios', '2022-07-22 20:07:43'),
+(4, 3, 'cucuta', 'las florez', 'mz c4 L21 torcoroma3', '2022-07-22 20:08:01'),
+(5, 4, 'cucuta', 'centro alfaro', 'El madrigal casa 45B', '2022-07-22 20:08:15');
 
 -- --------------------------------------------------------
 
@@ -367,7 +371,8 @@ ALTER TABLE `pago`
 -- Indices de la tabla `persona`
 --
 ALTER TABLE `persona`
-  ADD PRIMARY KEY (`id_persona`);
+  ADD PRIMARY KEY (`id_persona`),
+  ADD UNIQUE KEY `cedula` (`cedula`);
 
 --
 -- Indices de la tabla `propiedad`
@@ -390,19 +395,19 @@ ALTER TABLE `arrendador`
 -- AUTO_INCREMENT de la tabla `arrendatario`
 --
 ALTER TABLE `arrendatario`
-  MODIFY `id_arrendatario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_arrendatario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `contrato`
 --
 ALTER TABLE `contrato`
-  MODIFY `id_contrato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_contrato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `pago`
 --
 ALTER TABLE `pago`
-  MODIFY `id_pago` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pago` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `persona`

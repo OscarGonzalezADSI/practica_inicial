@@ -38,10 +38,26 @@ function viewContrato(data)
 	new TableContrato(tableId, name, className, data);
 }
 
+function viewContratosArrendador(data)
+{
+	tableId = "contratosArrendador";
+	name = "Contratos como arrendador";
+	className = "customers";
+	new TableContrato(tableId, name, className, data);
+}
+
+function viewContratosArrendatario(data)
+{
+	tableId = "contratosArrendatario";
+	name = "Contratos como arrendatario";
+	className = "customers";
+	new TableContrato(tableId, name, className, data);
+}
+
 function viewPago(data)
 {
 	tableId = "pago";
-	name = "pagos";
+	name = "Pagos realizados por el cliente hasta la fecha";
 	className = "customers";
 	new TablePago(tableId, name, className, data);
 }

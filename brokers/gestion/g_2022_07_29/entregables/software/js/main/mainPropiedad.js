@@ -1,3 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-	viewPropiedad(propiedades);
+	if(propiedades.length > 0)
+	{
+	    viewPropiedad(propiedades);
+    }
 });

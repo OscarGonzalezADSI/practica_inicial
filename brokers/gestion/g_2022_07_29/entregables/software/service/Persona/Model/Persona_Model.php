@@ -46,12 +46,15 @@ class Persona_Model
 		$conexion = new Conexion();
 		$arreglo = array();
 		$consulta = "SELECT
-		             nombres,
-		             apellidos,
-		             correo,
-		             fecha_registro
-                     FROM persona 
-                     WHERE correo = :correo";
+					nombres, 
+					apellidos, 
+					correo,
+					cedula, 
+					celular, 
+					direccion,
+					fecha_registro
+					FROM persona
+                    WHERE correo = :correo";
 		$modules = $conexion->prepare($consulta);
 		$modules->bindParam(":correo", $correo);
 		$modules->execute();
@@ -72,11 +75,14 @@ class Persona_Model
 		$conexion = new Conexion();
 		$arreglo = array();
 		$consulta = "SELECT
-		             nombres,
-		             apellidos,
-		             correo,
-		             fecha_registro
-                     FROM persona";
+					nombres, 
+					apellidos, 
+					correo,
+					cedula, 
+					celular, 
+					direccion,
+					fecha_registro
+					FROM persona";
 		$modules = $conexion->prepare($consulta);
 		$modules->execute();
 		$total = $modules->rowCount();
